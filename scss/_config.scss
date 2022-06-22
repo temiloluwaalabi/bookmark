@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+$soft-blue:hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+$white: white;
+$black: rgba(1, 1, 1, 0.755);
+
+$mobile: 375px;
+$dektop: 1440px;
+
+$font-weight: (
+    'regular': 400,
+    'bold': 500
+);
+
+@mixin mobile{
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+button, a, li, i, img{
+    cursor: pointer;
+}
